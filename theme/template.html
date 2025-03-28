@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="https://github.com/sareiodata/hx-weaver/" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - Personal Website</title>
-    <link rel="stylesheet" href="/theme/style.css">
+    <link rel="stylesheet" href="theme/style.css">
 </head>
 <body>
     <!-- Main container for all content -->
@@ -12,17 +13,17 @@
         <!-- Header and navigation in a flex container -->
         <div class="header-nav-container">
             <!-- Header will be loaded here -->
-            <div id="header" hx-get="/theme/header.html" hx-trigger="load"></div>
+            <div id="header" hx-get="theme/header.html" hx-trigger="load"></div>
 
             <!-- Navigation menu will be loaded here -->
-            <div id="menu" hx-get="/theme/menu.html" hx-trigger="load"></div>
+            <div id="menu" hx-get="theme/menu.html" hx-trigger="load"></div>
         </div>
 
         <!-- Main content area -->
         <main id="content"></main>
 
         <!-- Footer will be loaded here -->
-        <div id="footer" hx-get="/theme/footer.html" hx-trigger="load"></div>
+        <div id="footer" hx-get="theme/footer.html" hx-trigger="load"></div>
     </div>
 </body>
 </html>
