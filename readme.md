@@ -6,6 +6,9 @@ It applyes the same template (header, menu, footer) to basic HTML content pages 
 
 It should be considered as an alternative to static site builders and should work with almost any web-host.
 
+## Example
+[text](https://sareiodata.github.io/hx-weaver/)
+
 ## How to use
 
 1. Clone or download this repo:
