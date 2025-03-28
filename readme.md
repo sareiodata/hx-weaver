@@ -58,16 +58,20 @@ while allowing direct access to any page in the site without the need for a scri
 ## FAQ
 
 **I can't see changes made to my content and even though I have saved them**
+
 Most likely your browser cached the requests and is serving that version of the files. Clear your browser cache.
 
 **I can't make it work. I installed it in a sub-folder on my server**
+
 This version doesn't work in a sub-folder, only in the root of the server, due to relative paths for loading the files.
 
 **How can I have pretty links, like `example.com/my-sample-article/` instead of `example.com/my-sample-article.html`?**
+
 Many web servers are configured to serve an index.html file when a user accesses the root of a directory (or any subdirectory) on the server.
 This behavior is common for web servers like Apache, Nginx, and others. So you can have a folder structure like so: `/server-root/my-sample-article/index.html`.
 You should now be able to access that nicer looking URL.
 Alternativly you can also setup rewrites for your web-server (replacing the request `my-sample-article` with `my-sample-article.html`) however these are besides the point of this library.
 
 **How can I make all my pages discoverable for people who navigate without javascript.**
+
 You can always include a link to your menu or an archive page in all your content pages. Similar to the hx-weaver.js file, this link will have to be included in ALL your content files like `/page/about.html`.
