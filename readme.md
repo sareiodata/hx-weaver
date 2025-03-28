@@ -60,6 +60,9 @@ while allowing direct access to any page in the site without the need for a scri
 **I can't see changes made to my content and even though I have saved them**
 Most likely your browser cached the requests and is serving that version of the files. Clear your browser cache.
 
+**I can't make it work. I installed it in a sub-folder on my server**
+This version doesn't work in a sub-folder, only in the root of the server, due to relative paths for loading the files.
+
 **How can I have pretty links, like `example.com/my-sample-article/` instead of `example.com/my-sample-article.html`?**
 Many web servers are configured to serve an index.html file when a user accesses the root of a directory (or any subdirectory) on the server.
 This behavior is common for web servers like Apache, Nginx, and others. So you can have a folder structure like so: `/server-root/my-sample-article/index.html`.
