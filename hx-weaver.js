@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Get the body element
   const body = document.body;
-  // Fix initial flicker. Not sure about this. Might remove later. Should not impact SEO since the final JS rendered template is correct. 
+  // Fix initial flicker. Not sure about this. Might remove later. Should not impact SEO since the final JS rendered template is correct.
   body.style.display = 'none';
 });
 
@@ -16,7 +16,7 @@ function loadTemplate() {
   // Extract the title from the current document
   const currentTitle = document.title;
 
-  fetch("/theme/template.html")
+  fetch("template.html")
     .then((response) => response.text())
     .then((template) => {
       const parser = new DOMParser();

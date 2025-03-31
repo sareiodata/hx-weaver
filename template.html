@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for all content -->
+    <div class="container">
+        <!-- Header and navigation in a flex container -->
+        <div class="header-nav-container">
+            <!-- Header content -->
+            <header>
+              <h1>John Doe</h1>
+              <p>Welcome to my personal websites</p>
+            </header>
+
+            <!-- Navigation menu -->
+            <nav>
+              <ul>
+                <li><a href="index.html" hx-get="index.html" hx-target="#content" hx-push-url="index.html">Home</a></li>
+                <li><a href="about.html" hx-get="about.html" hx-target="#content" hx-push-url="true">About</a></li>
+              </ul>
+            </nav>
+        </div>
+
+        <!-- Main content area -->
+        <main id="content"></main>
+
+        <!-- Footer -->
+        <footer>
+          <p>&copy; 2024 John Doe. All rights reserved.</p>
+          <p>Built with <a href="https://github.com/sareiodata/hx-weaver.js">hx-weaver.js</a></p>
+        </footer>
+    </div>
+</body>
+</html>
